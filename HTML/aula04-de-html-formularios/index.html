@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Formulários</title>
+	</head>
+	<body>
+		<!-- agrupando todos os campos do formulário -->
+		<form>
+			<label for="nome">Nome Completo:</label>
+				<br />
+			<input id="nome" type="text" placeholder="Digite aqui o seu nome" minlength="3" maxlength="100" required>
+				<br /><br />
+			<label for="email">E-mail:</label> 
+				<br />
+			<input id="email" type="email" placeholder="Digite aqui o seu e-mail" required>
+				<br /><br />
+			<label for="senha">Senha:</label>
+				<br />
+			<input type="password" id="senha" placeholder="Digite uma sua senha" required>
+				<br /><br />
+			<label for="idade">Idade:</label>
+				<br />
+			<input id="idade" type="number" min="14" max="150">
+				<br /><br />
+			<label for="cor">Escolha sua cor favorita:</label>
+				<br />
+			<input id="cor" type="color">
+				<br /><br />
+			<label for="site">Site da sua empresa:</label>
+				<br />
+			<input type="url" value="https://www.iwtraining.com.br" id="site">
+				<br /><br />
+			<label for="data">Data de Nascimento:</label>
+				<br />
+			<input id="data" type="date">
+				<br /><br />
+			<label for="hora">Horário de Nascimento:</label>
+				<br />
+			<input id="hora" type="time">
+				<br /><br />
+			<label for="curriculo">Anexe o seu Currículo:</label>
+				<br />
+			<input id="curriculo" type="file">
+				<br /><br />
+			<label for="aval">Avalie o Curso:</label>
+				<br />
+			1<input id="aval" type="range" step="1" min="1" max="10">10
+				<br /><br />
+
+			<!-- Esse input não aparece pro usuario, pq ele é oculto -->
+			<input type="hidden" value="landing-page-1">
+
+			<p>Qual o turno do seu curso?</p>
+			<label for="manha">Manhã</label>
+			<input id="manha" type="radio" name="turno">
+				<br />
+			<label for="tarde">Tarde</label>
+			<input id="tarde" type="radio" name="turno">
+				<br />
+			<label for="noite">Noite</label>
+			<input id="noite" type="radio" name="turno">
+				<br /><br />
+			<p>Quais outros cursos você tem interesse em estudar?</p>
+			<label for="php">Desenvolvimento em PHP</label>
+			<input id="php" type="checkbox" name="cursos[]"><br />
+			<label for="java">Desenvolvimento em JAVA</label>
+			<input id="java" type="checkbox" name="cursos[]"><br />
+			<label for="python">Desenvolvimento de Apps Nativos</label>
+			<input id="python" type="checkbox" name="cursos[]"><br />
+				<br /><br />
+			<label for="mensagem">Deixa uma critica, sugestão ou simplesmente uma mensagem:</label>
+				<br />
+			<textarea rows="7" id="mensagem"></textarea>
+			
+				<br /><br />
+			<label for="cidade">Selecione a cidade que moras:</label>
+				<br />
+			<select id="Estado">
+				<option selected disabled> -- Selecione --</option>
+				<option value="AC">Acre</option>
+	<option value="AL">Alagoas</option>
+	<option value="AP">Amapá</option>
+	<option value="AM">Amazonas</option>
+	<option value="BA">Bahia</option>
+	<option value="CE">Ceará</option>
+	<option value="DF">Distrito Federal</option>
+	<option value="ES">Espírito Santo</option>
+	<option value="GO">Goiás</option>
+	<option value="MA">Maranhão</option>
+	<option value="MT">Mato Grosso</option>
+	<option value="MS">Mato Grosso do Sul</option>
+	<option value="MG">Minas Gerais</option>
+	<option value="PA">Pará</option>
+	<option value="PB">Paraíba</option>
+	<option value="PR">Paraná</option>
+	<option value="PE">Pernambuco</option>
+	<option value="PI">Piauí</option>
+	<option value="RJ">Rio de Janeiro</option>
+	<option value="RN">Rio Grande do Norte</option>
+	<option value="RS">Rio Grande do Sul</option>
+	<option value="RO">Rondônia</option>
+	<option value="RR">Roraima</option>
+	<option value="SC">Santa Catarina</option>
+	<option value="SP">São Paulo</option>
+	<option value="SE">Sergipe</option>
+	<option value="TO">Tocantins</option>
+			</select>
+				<br /><br />
+			<button>Enviar</button>
+		</form>
+	</body>
+</html>
