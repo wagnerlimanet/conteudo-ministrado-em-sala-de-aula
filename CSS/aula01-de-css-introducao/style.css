@@ -1,0 +1,44 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    }
+    h1 {
+        text-align: center;
+        }
+
+    .produto {
+        border: 1px solid #333;
+        width: 90%;
+        padding: 5%;
+        border-radius: 3%;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 3%;
+            }
+
+        h2 {
+            font-size: 36px;
+            margin: 10px 0px;
+            }
+        
+        p {
+            font-size: 18px;
+            color: #333;
+            }
+
+            p:hover {
+                text-decoration: underline;
+                }
+
+        button {
+            background: #f60;
+            padding: 10px 20px;
+            border: 0px;
+            border-radius: 10px;
+            font-weight: 900;
+            }
+
+            button:hover {
+                background: yellow;
+                }
